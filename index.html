@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Moderne Website f&uuml;r den Wittgensteiner Hof mit ruhiger, warmer Atmosph&auml;re.">
+  <title>Wittgensteiner Hof | Restaurant &amp; Gastlichkeit</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Schneller Sprung zum Hauptinhalt fuer Tastatur-Nutzung. -->
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <!-- Kopfzeile: Navigationseintraege hier bei Bedarf ergaenzen oder umbenennen. -->
+  <header class="site-header" data-header>
+    <a class="brand" href="#start" aria-label="Wittgensteiner Hof Startseite">
+      <img src="assets/wittgensteiner-hof-wordmark.png" alt="Wittgensteiner Hof" class="brand__wordmark">
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Navigation &ouml;ffnen" aria-controls="navigation" aria-expanded="false" data-nav-toggle>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="navigation" aria-label="Hauptnavigation" data-nav>
+      <a href="#haus">Haus</a>
+      <a href="#kueche">K&uuml;che</a>
+      <a href="#momente">Momente</a>
+      <a href="#kontakt" class="nav-reserve">Reservieren</a>
+    </nav>
+  </header>
+
+  <main id="inhalt">
+    <!-- Hero-Bereich: Bild, Titel und Einstiegslinks. -->
+    <section class="hero" id="start" aria-label="Willkommen im Wittgensteiner Hof">
+      <img src="assets/restaurant-hero.png" alt="Warm beleuchteter Gastraum mit gedeckten Holztischen" class="hero__image">
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="eyebrow">Restaurant &amp; Gastlichkeit</p>
+        <h1>Wittgensteiner Hof. Ruhig ankommen, warm genie&szlig;en.</h1>
+        <p>
+          Eine moderne Adresse f&uuml;r gute regionale K&uuml;che, pers&ouml;nliche Gastfreundschaft
+          und Abende, die ohne viel L&auml;rm in Erinnerung bleiben.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#kontakt">Tisch anfragen</a>
+          <a class="button button--light" href="#kueche">K&uuml;che entdecken</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kurzvorstellung des Hauses. -->
+    <section class="section intro" id="haus">
+      <div class="section__inner intro__grid">
+        <div>
+          <p class="eyebrow eyebrow--dark">Das Haus</p>
+          <h2>Ein Ort mit Klarheit, W&auml;rme und Zeit.</h2>
+        </div>
+        <div class="intro__copy">
+          <p>
+            Der Wittgensteiner Hof verbindet die vertraute Ruhe eines Gasthauses mit
+            einer zeitgem&auml;&szlig;en, leichten Gestaltung. Holz, sanftes Licht und klare
+            Linien geben dem Raum eine warme Selbstverst&auml;ndlichkeit.
+          </p>
+          <p>
+            Ob ein Abendessen zu zweit, ein Treffen mit Freunden oder ein kleines Fest:
+            die Atmosph&auml;re bleibt entspannt, aufmerksam und angenehm unaufgeregt.
+          </p>
+        </div>
+        <img src="assets/wittgensteinerhof-drawing.gif" alt="Historische Zeichnung des Wittgensteiner Hofs" class="intro__drawing">
+      </div>
+    </section>
+
+    <!-- Karten-Teaser: Texte lassen sich spaeter gegen echte Speisekarten-Inhalte tauschen. -->
+    <section class="section kitchen" id="kueche">
+      <div class="section__inner">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow--dark">K&uuml;che</p>
+          <h2>Saisonal, ehrlich und mit feinen Details.</h2>
+          <p>
+            Die Karte darf wechseln, der Anspruch bleibt: sorgf&auml;ltige Zutaten,
+            ruhige Teller und Gerichte, die nach Region und Jahreszeit schmecken.
+          </p>
+        </div>
+
+        <div class="menu-grid" aria-label="Beispielbereiche der Speisekarte">
+          <article class="menu-card">
+            <span>01</span>
+            <h3>Abendkarte</h3>
+            <p>Klassiker des Hauses, modern interpretiert und angenehm leicht serviert.</p>
+          </article>
+          <article class="menu-card">
+            <span>02</span>
+            <h3>Saison</h3>
+            <p>Frische Akzente aus Markt, Garten und Region, passend zum Moment.</p>
+          </article>
+          <article class="menu-card">
+            <span>03</span>
+            <h3>Feiern</h3>
+            <p>Men&uuml;s f&uuml;r kleine Gesellschaften, pers&ouml;nlich abgestimmt und ruhig geplant.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Atmosphaere und Anlaesse. -->
+    <section class="section moments" id="momente">
+      <div class="section__inner moments__grid">
+        <div class="moments__text">
+          <p class="eyebrow eyebrow--dark">Atmosph&auml;re</p>
+          <h2>Wenig Ablenkung. Viel Gef&uuml;hl.</h2>
+          <p>
+            Manche Abende brauchen keine gro&szlig;e Geste. Ein guter Tisch, aufmerksamer
+            Service und eine Umgebung, die ruhig genug ist, damit Gespr&auml;che Platz haben.
+          </p>
+        </div>
+        <div class="moments__list">
+          <div>
+            <strong>Zu zweit</strong>
+            <span>Ein entspannter Abend mit Zeit, Licht und einer Karte, die nicht dr&auml;ngt.</span>
+          </div>
+          <div>
+            <strong>Mit Freunden</strong>
+            <span>Gemeinsam essen, teilen, nachbestellen und noch ein Glas bleiben.</span>
+          </div>
+          <div>
+            <strong>F&uuml;r Anl&auml;sse</strong>
+            <span>Kleine Feiern werden pers&ouml;nlich besprochen und passend begleitet.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontaktdaten und Reservierungsformular. E-Mail-Adresse in data-email und im Link gemeinsam anpassen. -->
+    <section class="section contact" id="kontakt">
+      <div class="section__inner contact__grid">
+        <div class="contact__info">
+          <p class="eyebrow eyebrow--dark">Reservierung</p>
+          <h2>Ein Tisch, ein Anlass, ein guter Abend.</h2>
+          <p>
+            Teilen Sie Datum, Uhrzeit und Personenzahl mit. Das Team meldet sich
+            anschlie&szlig;end pers&ouml;nlich mit einer R&uuml;ckmeldung.
+          </p>
+          <dl class="details">
+            <div>
+              <dt>Adresse</dt>
+              <dd>Wittgensteiner Hof, Wittgenstein</dd>
+            </div>
+            <div>
+              <dt>E-Mail</dt>
+              <dd><a href="mailto:info@wittgensteiner-hof.de">info@wittgensteiner-hof.de</a></dd>
+            </div>
+            <div>
+              <dt>&Ouml;ffnungszeiten</dt>
+              <dd>Mi bis So ab 17:00 Uhr</dd>
+            </div>
+          </dl>
+        </div>
+
+        <form class="booking-form" data-reservation-form data-email="info@wittgensteiner-hof.de">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="Name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-pair">
+            <div class="form-row">
+              <label for="date">Datum</label>
+              <input id="date" name="Datum" type="date" required>
+            </div>
+            <div class="form-row">
+              <label for="time">Uhrzeit</label>
+              <input id="time" name="Uhrzeit" type="time" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="guests">Personen</label>
+            <input id="guests" name="Personen" type="number" min="1" max="30" value="2" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="Nachricht" rows="4" placeholder="Allergien, Anlass oder besondere W&uuml;nsche"></textarea>
+          </div>
+          <button class="button button--primary button--full" type="submit">Anfrage senden</button>
+          <p class="form-status" role="status" data-form-status></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Unterer Bereich: Die href-Werte bei Social Links durch die echten Profil-Adressen ersetzen. -->
+  <section class="bottom-links" aria-label="Mehr vom Wittgensteiner Hof">
+    <div class="section__inner bottom-links__inner">
+      <div>
+        <p class="eyebrow eyebrow--dark">Folgen</p>
+        <h2>Bleiben Sie in Verbindung.</h2>
+      </div>
+      <div class="social-links" aria-label="Social Media">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+      <nav class="legal-links" aria-label="Rechtliche Hinweise">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Footer: Das Jahr wird automatisch in script.js eingetragen. -->
+  <footer class="site-footer">
+    <div class="section__inner footer__inner">
+      <img src="assets/wittgensteiner-hof-wordmark.png" alt="Wittgensteiner Hof" class="footer__logo">
+      <p>Restaurant &amp; Gastlichkeit</p>
+      <small>&copy; <span data-year></span> Wittgensteiner Hof</small>
+    </div>
+  </footer>
+</body>
+</html>
